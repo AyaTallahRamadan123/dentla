@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dentla connects dental clinics and dental laboratories in one organized digital workflow, from case submission to delivery. Request access as a dentist or a lab." />
+  <title>Dentla — Two Sides. One Smile.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/dentla-logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Dentla home">
+        <img src="assets/dentla-logo.png" alt="Dentla — Two Sides. One Smile." />
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#sides">For dentists and labs</a>
+        <a href="#workspace">Workspace</a>
+        <a href="#join">Join</a>
+      </div>
+      <div class="nav-actions">
+        <a class="button button-small button-line" href="#join" data-join="lab">Join as a lab</a>
+        <a class="button button-small" href="#join" data-join="dentist">Join as a dentist</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO: two sides, one tooth -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="bg-clinic"></div>
+        <div class="bg-lab"></div>
+      </div>
+
+      <div class="tooth" aria-hidden="true">
+        <i class="ring ring-a"></i><i class="ring ring-b"></i>
+        <svg viewBox="0 0 340 350">
+          <defs>
+            <clipPath id="halfL"><rect x="0" y="0" width="170" height="350"/></clipPath>
+            <clipPath id="halfR"><rect x="170" y="0" width="170" height="350"/></clipPath>
+          </defs>
+          <path d="M170 42c-34-25-88-13-104 27-13 34 4 74 18 110 13 35 21 107 47 111 26 4 21-86 48-88 27-2 23 92 50 88 26-4 34-76 47-111 14-36 31-76 18-110-16-40-70-52-104-27-7 5-13 5-20 0Z" fill="#fff"/>
+          <path d="M170 42c-34-25-88-13-104 27-13 34 4 74 18 110 13 35 21 107 47 111 26 4 21-86 48-88 27-2 23 92 50 88 26-4 34-76 47-111 14-36 31-76 18-110-16-40-70-52-104-27-7 5-13 5-20 0Z" clip-path="url(#halfL)" fill="#d3e3f8"/>
+          <path d="M170 42c-34-25-88-13-104 27-13 34 4 74 18 110 13 35 21 107 47 111 26 4 21-86 48-88 27-2 23 92 50 88 26-4 34-76 47-111 14-36 31-76 18-110-16-40-70-52-104-27-7 5-13 5-20 0Z" clip-path="url(#halfR)" fill="#c6f3ef"/>
+          <path d="M170 42c-34-25-88-13-104 27-13 34 4 74 18 110 13 35 21 107 47 111 26 4 21-86 48-88 27-2 23 92 50 88 26-4 34-76 47-111 14-36 31-76 18-110-16-40-70-52-104-27-7 5-13 5-20 0Z" fill="none" stroke="#fff" stroke-width="10" stroke-linejoin="round"/>
+          <path d="M92 97c34-36 122-45 163-5" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".9"/>
+          <path d="M114 175c27 17 83 23 115 2" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+        </svg>
+      </div>
+
+      <div class="hero-inner container">
+        <h1 id="hero-title">
+          <span class="h1-left">Two sides.</span>
+          <span class="h1-right">One smile.</span>
+        </h1>
+
+        <div class="hero-sides">
+          <div class="side side-clinic" data-side="clinic">
+            <p class="side-tag">Dentists and clinics</p>
+            <h2>Send the case.<br>Skip the phone calls.</h2>
+            <p>Upload scans and instructions once, then see exactly where your case is.</p>
+            <a class="button button-light" href="#join" data-join="dentist">Join as a dentist</a>
+          </div>
+          <div class="side side-lab" data-side="lab">
+            <p class="side-tag">Dental laboratories</p>
+            <h2>Get clear cases.<br>Deliver on time.</h2>
+            <p>Receive complete orders, assign your technicians and update every stage.</p>
+            <a class="button button-dark" href="#join" data-join="lab">Join as a lab</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="route" aria-hidden="true">
+        <div class="route-line"></div>
+        <div class="route-chip" id="routeChip"><i></i><span id="routeText">Case #2048 · Sent from clinic</span></div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="flow" id="how-it-works" aria-labelledby="flow-title">
+      <div class="container">
+        <div class="flow-head">
+          <h2 id="flow-title">One case, from the chair to the bench and back.</h2>
+          <p>Each step has an owner, so nobody has to ask where things are.</p>
+        </div>
+        <ol class="ladder">
+          <li class="rung rung-clinic">
+            <span class="node">1</span>
+            <div class="rung-card">
+              <span class="who who-clinic">Clinic</span>
+              <h3>Submit the case</h3>
+              <p>Add case details, photos, scans and instructions in one organized request.</p>
+            </div>
+          </li>
+          <li class="rung rung-lab">
+            <span class="node">2</span>
+            <div class="rung-card">
+              <span class="who who-lab">Lab</span>
+              <h3>Review and produce</h3>
+              <p>The lab accepts the request, assigns a technician and updates each production stage.</p>
+            </div>
+          </li>
+          <li class="rung rung-both">
+            <span class="node">3</span>
+            <div class="rung-card">
+              <span class="who who-both">Both</span>
+              <h3>Track and deliver</h3>
+              <p>Follow progress, arrange pickup or delivery, and keep the full case history together.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- EACH SIDE -->
+    <section class="sides" id="sides" aria-label="Dentla for dentists and for labs">
+      <article class="panel panel-clinic" id="dentists">
+        <div class="panel-copy">
+          <h2>For dentists</h2>
+          <p class="panel-lead">More time with your patients, fewer follow-up calls to the lab.</p>
+          <ul class="ticks">
+            <li>Submit cases and attach files</li>
+            <li>Follow production progress</li>
+            <li>Request pickup and delivery</li>
+            <li>Review invoices and case history</li>
+          </ul>
+          <a class="button button-light" href="#join" data-join="dentist">Request dentist access</a>
+        </div>
+        <div class="mock mock-case" aria-hidden="true">
+          <div class="mock-top"><i></i><i></i><i></i></div>
+          <div class="mock-body">
+            <small>Case #2048 · Zirconia crown</small>
+            <b>In production</b>
+            <div class="steps"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+            <div class="mock-row"><span>Lab</span><em>Assigned</em></div>
+            <div class="mock-row"><span>Delivery</span><em>Thu</em></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel panel-lab" id="labs">
+        <div class="panel-copy">
+          <h2>For labs</h2>
+          <p class="panel-lead">Every clinic order, technician task and delivery on one board.</p>
+          <ul class="ticks">
+            <li>Organize incoming clinic orders</li>
+            <li>Assign tasks to technicians</li>
+            <li>Manage production stages</li>
+            <li>Track delivery and payments</li>
+          </ul>
+          <a class="button button-dark" href="#join" data-join="lab">Request lab access</a>
+        </div>
+        <div class="mock mock-board" aria-hidden="true">
+          <div class="mock-top"><i></i><i></i><i></i></div>
+          <div class="mock-body board">
+            <div><small>To do</small><span></span><span></span></div>
+            <div><small>In progress</small><span class="hot"></span><span></span></div>
+            <div><small>Done</small><span class="done"></span></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- WORKSPACE -->
+    <section class="workspace" id="workspace" aria-labelledby="ws-title">
+      <div class="container ws-grid">
+        <div class="ws-head">
+          <h2 id="ws-title">Everything in the case stays with the case.</h2>
+          <p>From the first request to the final invoice, the details stay where they belong.</p>
+        </div>
+        <dl class="ws-list">
+          <div><dt>Digital case submission</dt><dd>Specifications, photos, digital scans and special instructions in one place.</dd></div>
+          <div><dt>Case progress tracking</dt><dd>See where each case stands, from review and production to quality check.</dd></div>
+          <div><dt>Clinic and lab messages</dt><dd>Conversations stay attached to the request they are about.</dd></div>
+          <div><dt>Pickup and delivery</dt><dd>Arrange collection and delivery with clear status updates.</dd></div>
+          <div><dt>Invoices and payments</dt><dd>Keep invoices, payment records and open balances organized.</dd></div>
+          <div><dt>Reports for lab managers</dt><dd>A clearer view of workload, turnaround time and daily operations.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- JOIN -->
+    <section class="join" id="join" data-role="dentist" aria-labelledby="join-title">
+      <div class="container join-grid">
+        <div class="join-intro">
+          <h2 id="join-title">Join Dentla</h2>
+          <div class="switch" role="tablist" aria-label="Choose your account type">
+            <button class="switch-btn is-active" role="tab" id="tab-dentist" aria-controls="form-dentist" aria-selected="true" data-role="dentist">I’m a dentist</button>
+            <button class="switch-btn" role="tab" id="tab-lab" aria-controls="form-lab" aria-selected="false" data-role="lab" tabindex="-1">I run a lab</button>
+          </div>
+
+          <div class="intro-copy" data-for="dentist">
+            <p class="intro-lead">Tell us about your clinic. We’ll review your details and contact you to set up your account.</p>
+            <ol class="next">
+              <li>Send your details with this form.</li>
+              <li>We check your syndicate or license number.</li>
+              <li>You get access and send your first case.</li>
+            </ol>
+          </div>
+          <div class="intro-copy" data-for="lab" hidden>
+            <p class="intro-lead">Tell us about your laboratory. We’ll review your details and contact you to set up your account.</p>
+            <ol class="next">
+              <li>Send your lab’s details with this form.</li>
+              <li>We check your license and services.</li>
+              <li>You get access and start receiving clinic orders.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="join-card">
+          <!-- DENTIST FORM -->
+          <form class="join-form" id="form-dentist" data-role="dentist" role="tabpanel" aria-labelledby="tab-dentist" novalidate>
+            <div class="grid">
+              <div class="field"><label for="d-name">Full name</label><input id="d-name" name="fullName" autocomplete="name" required /><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="d-clinic">Clinic name</label><input id="d-clinic" name="clinicName" autocomplete="organization" required /><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="d-email">Email</label><input id="d-email" name="email" type="email" autocomplete="email" required /><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="d-phone">Phone or WhatsApp</label><input id="d-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="01x xxxx xxxx" required /><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="d-gov">Governorate</label><select id="d-gov" name="governorate" data-governorates required></select><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="d-spec">Specialty</label>
+                <select id="d-spec" name="specialty" required>
+                  <option value="">Choose one</option>
+                  <option>General dentistry</option><option>Orthodontics</option><option>Prosthodontics</option><option>Endodontics</option><option>Periodontics</option><option>Pediatric dentistry</option><option>Oral surgery</option><option>Implantology</option><option>Other</option>
+                </select><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="d-lic">Syndicate or license number</label><input id="d-lic" name="license" required /><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="d-vol">Cases you send per month</label>
+                <select id="d-vol" name="casesPerMonth" required>
+                  <option value="">Choose one</option><option>Fewer than 10</option><option>10 to 30</option><option>31 to 100</option><option>More than 100</option>
+                </select><p class="err" aria-live="polite"></p></div>
+            </div>
+            <fieldset class="chips">
+              <legend>What do you want to do with Dentla?</legend>
+              <label><input type="checkbox" name="needs" value="Submit cases" /><span>Submit cases</span></label>
+              <label><input type="checkbox" name="needs" value="Track progress" /><span>Track progress</span></label>
+              <label><input type="checkbox" name="needs" value="Pickup and delivery" /><span>Pickup and delivery</span></label>
+              <label><input type="checkbox" name="needs" value="Invoices" /><span>Invoices</span></label>
+            </fieldset>
+            <div class="field"><label for="d-msg">Anything else we should know? <em>Optional</em></label><textarea id="d-msg" name="message" rows="3"></textarea></div>
+            <label class="consent"><input type="checkbox" name="consent" required /><span>I agree that Dentla can contact me about my request.</span></label>
+            <p class="err consent-err" aria-live="polite"></p>
+            <button class="button button-submit" type="submit">Send my request</button>
+          </form>
+
+          <!-- LAB FORM -->
+          <form class="join-form" id="form-lab" data-role="lab" role="tabpanel" aria-labelledby="tab-lab" novalidate hidden>
+            <div class="grid">
+              <div class="field"><label for="l-name">Lab name</label><input id="l-name" name="labName" autocomplete="organization" required /><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="l-person">Contact person</label><input id="l-person" name="contactPerson" autocomplete="name" required /><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="l-email">Email</label><input id="l-email" name="email" type="email" autocomplete="email" required /><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="l-phone">Phone or WhatsApp</label><input id="l-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="01x xxxx xxxx" required /><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="l-gov">Governorate</label><select id="l-gov" name="governorate" data-governorates required></select><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="l-lic">Commercial register or license number</label><input id="l-lic" name="license" required /><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="l-team">Team size</label>
+                <select id="l-team" name="teamSize" required>
+                  <option value="">Choose one</option><option>1 to 3 technicians</option><option>4 to 10 technicians</option><option>11 to 25 technicians</option><option>More than 25</option>
+                </select><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="l-cap">Cases you can produce per month</label>
+                <select id="l-cap" name="capacity" required>
+                  <option value="">Choose one</option><option>Fewer than 50</option><option>50 to 200</option><option>201 to 500</option><option>More than 500</option>
+                </select><p class="err" aria-live="polite"></p></div>
+            </div>
+            <fieldset class="chips" data-min="1">
+              <legend>Services you offer</legend>
+              <label><input type="checkbox" name="services" value="Crowns and bridges" /><span>Crowns and bridges</span></label>
+              <label><input type="checkbox" name="services" value="Dentures" /><span>Dentures</span></label>
+              <label><input type="checkbox" name="services" value="Implants" /><span>Implants</span></label>
+              <label><input type="checkbox" name="services" value="Orthodontic appliances" /><span>Orthodontic appliances</span></label>
+              <label><input type="checkbox" name="services" value="Aligners" /><span>Aligners</span></label>
+              <label><input type="checkbox" name="services" value="CAD/CAM" /><span>CAD/CAM</span></label>
+              <label><input type="checkbox" name="services" value="Ceramics" /><span>Ceramics</span></label>
+              <p class="err" aria-live="polite"></p>
+            </fieldset>
+            <fieldset class="chips">
+              <legend>Do you accept digital scans (STL files)?</legend>
+              <label><input type="radio" name="digitalScans" value="Yes" /><span>Yes</span></label>
+              <label><input type="radio" name="digitalScans" value="No" /><span>No</span></label>
+              <label><input type="radio" name="digitalScans" value="Not yet" /><span>Not yet</span></label>
+            </fieldset>
+            <div class="field"><label for="l-msg">Anything else we should know? <em>Optional</em></label><textarea id="l-msg" name="message" rows="3"></textarea></div>
+            <label class="consent"><input type="checkbox" name="consent" required /><span>I agree that Dentla can contact me about my request.</span></label>
+            <p class="err consent-err" aria-live="polite"></p>
+            <button class="button button-submit" type="submit">Send my request</button>
+          </form>
+
+          <!-- SUCCESS -->
+          <div class="success" id="success" tabindex="-1" hidden>
+            <div class="success-mark" aria-hidden="true">✓</div>
+            <h3>Request sent</h3>
+            <p id="successText"></p>
+            <button class="button button-line-dark" type="button" id="againBtn">Send another request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand" href="#top"><img src="assets/dentla-logo.png" alt="Dentla — Two Sides. One Smile." /></a></div>
+      <div class="footer-column"><b>Explore</b><a href="#how-it-works">How it works</a><a href="#sides">For dentists and labs</a><a href="#workspace">Workspace</a></div>
+      <div class="footer-column"><b>Join</b><a href="#join" data-join="dentist">As a dentist</a><a href="#join" data-join="lab">As a lab</a></div>
+      <div class="footer-column"><b>Get in touch</b><a href="mailto:hello@dentla.example">hello@dentla.example</a><span>Assiut, Egypt</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Dentla. All rights reserved.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
