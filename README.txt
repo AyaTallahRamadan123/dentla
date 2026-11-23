@@ -22,5 +22,5 @@ to the verified email address configured in the Formspree dashboard. Fields:
   lab:     labName, contactPerson, email, phone, governorate, license, teamSize, capacity, services[], digitalScans, message
 Before publishing
 - Confirm the recipient email in the Formspree dashboard.
-- Replace hello@dentla.example with your real contact email in index.html.
+- Replace dentlateam@gmail.com with your real contact email in index.html.
 - Submit one test as a dentist and one as a lab, then verify both in Formspree submissions and the recipient inbox.
